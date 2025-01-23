@@ -4703,3 +4703,12 @@ header.main-header .header-sticky.active .navbar{
         max-width: 100%;
     }
 }
+
+
+.service-video{
+	width: 400px;
+	height: 545px;
+	object-fit: cover;
+	aspect-ratio: 1 / 1.36;
+	transition: all 0.4s ease-in-out;
+}
