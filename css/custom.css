@@ -39,7 +39,7 @@
 /************************************/	
 
 :root{
-	--primary-color			: #32435b;
+	--primary-color			: rgb(13, 31, 53);
 	--secondery-color		: #F8F8F8;
 	--text-color			: #283132;
 	--accent-color			: #7C877F;
@@ -518,11 +518,11 @@ header.main-header .header-sticky.active .navbar{
 	margin: 0;
 	list-style: none;
 	width: 230px;
-	border-radius: 20px;
+	border-radius: 2px;
 	position: absolute;
 	left: 0;
 	top: 100%;
-	background-color: var(--accent-color);
+	background-color: rgb(13, 31, 53);
 	transition: all 0.3s ease-in-out;
 	text-align: left;
 }
@@ -568,10 +568,11 @@ header.main-header .header-sticky.active .navbar{
 
 .main-menu ul ul li a:hover,
 .main-menu ul ul li a:focus{
-	color: var(--primary-color);
-	background-color: transparent;
+	color: #000000;
+	background-color: #e5ddde;
 	padding: 6px 20px 6px 23px !important;
 }
+
 
 .responsive-menu,
 .navbar-toggle{
