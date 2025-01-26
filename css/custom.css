@@ -2114,12 +2114,13 @@ header.main-header .header-sticky.active .navbar{
 
 .page-header{
 	position: relative;
-	background: url('../images/page-header-bg.jpg');
+	background: url('../images/home/about-slider.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	padding: 270px 0 180px;
 	margin-top: -118px;
+	box-shadow: 400px 400px 400px 400px inset #0000008f;
 }
 
 .page-header::before{
@@ -3294,10 +3295,16 @@ header.main-header .header-sticky.active .navbar{
     left: 0;
 }
 
+.gallery-items{
+	margin-top: 111px;
+    margin-bottom: 100px;
+}
+
 .project-gallery-images{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+	   
 }
 
 .project-gallery-img{
@@ -4713,3 +4720,120 @@ header.main-header .header-sticky.active .navbar{
 	aspect-ratio: 1 / 1.36;
 	transition: all 0.4s ease-in-out;
 }
+
+
+.color-tab {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: inline-block;
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+
+.color-tab.active {
+	border-color: #000;
+}
+
+.product-images img {
+	width: 100%;
+	cursor: pointer;
+	height: 500px;
+	object-fit: fill;
+}
+.side-scroll{
+	height: 500px;
+	overflow: scroll;
+}
+.side-scroll img{
+	height: 175px;
+	width: 175px;
+	object-fit: fill;
+	float: right;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+	.product-images img {
+		width: 100%;
+		cursor: pointer;
+		height: 200px;
+		object-fit: fill;
+	}
+
+	.side-scroll{
+		height: 200px;
+		overflow: scroll;
+	}
+
+	.side-scroll img{
+		height: 100px;
+		width: 100px;
+		object-fit: fill;
+	}
+  }
+
+  @media only screen and (max-width: 768px) {
+	.product-images img {
+		width: 100% !important;
+		cursor: pointer;
+		height: 200px;
+		object-fit: fill;
+	}
+
+	.side-scroll img{
+		height: 79px;
+		/* width: 82px; */
+		object-fit: fill;
+		float: right;
+	}
+  }
+
+
+.one-product{
+	background-color: #000;
+}
+.two-product{
+	background-color: red;
+}
+.three-product{	
+	background-color: blue;
+}
+.four-product{
+	background-color: purple;
+}
+.five-product{
+ 	background-color: gold;
+}
+.six-product{
+	background-color: #000;
+}
+.seven-product{
+	background-color: red;
+}
+.eight-product{	
+	background-color: blue;
+}
+.nine-product{
+	background-color: purple;
+}
+.ten-product{
+ 	background-color: rgb(32, 65, 113);
+}
+.eleven-product{
+	background-color: rgb(50, 176, 162);
+}
+.twelve-product{
+	background-color: rgb(33, 120, 126);
+}
+.thirteen-product{
+	background-color: rgb(109, 58, 199);
+}
+.fourteen-product{
+	border-color: aquamarine;
+}
+
+
