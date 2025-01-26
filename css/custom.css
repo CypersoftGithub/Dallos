@@ -4739,7 +4739,7 @@ header.main-header .header-sticky.active .navbar{
 	width: 100%;
 	cursor: pointer;
 	height: 500px;
-	object-fit: fill;
+	object-fit: cover;
 }
 .side-scroll{
 	height: 500px;
@@ -4748,7 +4748,7 @@ header.main-header .header-sticky.active .navbar{
 .side-scroll img{
 	height: 175px;
 	width: 175px;
-	object-fit: fill;
+	object-fit: cover;
 	float: right;
 }
 ::-webkit-scrollbar {
