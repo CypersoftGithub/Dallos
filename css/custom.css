@@ -4739,7 +4739,7 @@ header.main-header .header-sticky.active .navbar{
 	width: 100%;
 	cursor: pointer;
 	height: 500px;
-	object-fit: cover;
+	object-fit: fill;
 }
 .side-scroll{
 	height: 500px;
@@ -4748,7 +4748,7 @@ header.main-header .header-sticky.active .navbar{
 .side-scroll img{
 	height: 175px;
 	width: 175px;
-	object-fit: cover;
+	object-fit: fill;
 	float: right;
 }
 ::-webkit-scrollbar {
@@ -4791,6 +4791,97 @@ header.main-header .header-sticky.active .navbar{
 		float: right;
 	}
   }
+
+
+
+  .product-color{
+	position: relative;
+    display: inline-block;
+    background: var(--accent-color);
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: capitalize;
+    border: none;
+    padding: 17px 26px 17px 20px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    z-index: 0;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.product-color:hover{
+	background: transparent;
+    color: var(--white-color);
+}
+
+.product-color::before{
+	content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    /* background-image: url(../images/arrow-white.svg); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: translate(-20px, -50%);
+    transition: all 0.4s ease-in-out;
+}
+
+.product-color:hover::before{
+	transform: translate(-18px, -50%);
+}
+
+.product-color::after{
+	content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15%;
+	right: 0;
+    width: 0;
+    height: 106%;
+    background: var(--primary-color);
+    transform: skew(45deg);
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.product-color:hover:after{
+	width: 100%;
+    transform: skew(0deg);
+    left: 0;
+}
+
+.product-color.btn-highlighted{
+	background-color: var(--white-color);
+	color: var(--accent-color);
+}
+
+.product-color.btn-highlighted:hover{
+	color: var(--white-color);
+}
+
+.product-color.btn-highlighted::before{
+	/* background-image: url(../images/arrow-accent.svg); */
+}
+
+.product-color.btn-highlighted:hover::before{
+    filter: brightness(0) invert(1);
+}
+
+.product-color.btn-highlighted::after{
+	background-color: var(--accent-color);
+}
+
+.Product-Discription{
+	font-weight: 700;
+}
 
 
 .one-product{
@@ -4836,4 +4927,18 @@ header.main-header .header-sticky.active .navbar{
 	border-color: aquamarine;
 }
 
-
+.shower-one{
+	background-color: red;
+}
+.shower-two{
+	background-color: rgb(51, 0, 255);
+}
+.shower-three{
+	background-color: rgb(47, 255, 0);
+}
+.shower-four{
+	background-color: rgb(72, 117, 108);
+}
+.shower-five{
+	background-color: rgb(74, 113, 121);
+}

@@ -197,7 +197,7 @@
 				<div class="col-lg-12">
 					<!-- Page Header Box Start -->
 					<div class="page-header-box">
-						<h1 class="text-anime-style-2" data-cursor="-opaque">Customer Care</h1>
+						<h1 class="text-anime-style-2" data-cursor="-opaque">Customer Care & Warranty</h1>
 						<!-- <nav class="wow fadeInUp">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="index.html">home</a></li>
@@ -216,22 +216,12 @@
     <div class="page-contact-us">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <!-- Contact Us Image Start -->
-                    <div class="contact-us-image">
-                        <figure class="image-anime reveal">
-                            <img src="images/home/customer-care.jpg" alt="">
-                        </figure>
-                    </div>
-                    <!-- Contact Us Image End -->
-                </div>
-                
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <!-- Contact Us Form Start -->
                     <div class="contact-us-form">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp">contact form</h3>
+                            <h3 class="wow fadeInUp">Warranty form</h3>
                             <h2 class="text-anime-style-2" data-cursor="-opaque">Contact Dallas Bathware   <span>for Exceptional Service</span></h2>
                             <p class="wow fadeInUp" data-wow-delay="0.2s">Your email address will not be published. Required fields are marked *</p>
                         </div>
@@ -242,26 +232,74 @@
                             <!-- Contact Form Start -->
                             <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.4s">
                                 <div class="row">
-                                    <div class="form-group col-md-6 mb-4">
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Name*" required>
+                                    <div class="form-group col-md-12 mb-4">Service Request Type*
+                                        <select type="text" name="request_type" id="request_type" class="form-control col-md-12">
+                                            <option value="Product Complaint">Product Complaint</option>
+                                            <option value="Installation Guidelines">installation Guidelines</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-12 mb-4">Service Description*
+                                        <textarea name="description" id="description" class="form-control col-md-12" style="height:100px;"></textarea>
+                                        <div class="error_holder"> </div></div>
+                                    <div class="form-group col-md-6 mb-4">Customer Name*
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Enter Name" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
-                                    <div class="form-group col-md-6 mb-4">
-                                        <input type="email" name ="email" class="form-control" id="email" placeholder="Email Address*" required>
+                                    <div class="form-group col-md-6 mb-4">Suppling Dealer Name*
+                                        <input type="email" name ="email" class="form-control" id="email" placeholder="Enter Suppling Dealer Name" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-4">Email*
+                                        <input type="email" name ="email" class="form-control" id="email" placeholder="Enter Email Address" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
-                                    <div class="form-group col-md-12 mb-4">
-                                        <input type="text" name="phone" class="form-control" id="phone" placeholder="Your Phone" required>
+                                    <div class="form-group col-md-6 mb-4">Contact Number*
+                                        <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter Contact Number" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-4">Alternate Contact Number
+                                        <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter Contact Number" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
-                                    <div class="form-group col-md-12 mb-5">
-                                        <textarea name="message" class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+
+                                    <div class="section-title" style="margin-bottom: 0px;">
+                                        <h3 class="wow fadeInUp">Address</h3>
+                                    </div>
+                                    
+                                    <div class="form-group col-md-6 mb-4">Street Address*
+                                        <input type="text" name="name" class="form-control" id="Street Address" placeholder="Enter Street Address" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
+                                    <div class="form-group col-md-6 mb-4">Area/Locality*
+                                        <input type="text" name="name" class="form-control" id="Street Address" placeholder="Enter Area" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-4">Landmark*
+                                        <input type="text" name="name" class="form-control" id="Street Address" placeholder="Enter Landmark" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-4">City*
+                                        <input type="text" name="name" class="form-control" id="Street Address" placeholder="Enter City" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-4">State*
+                                        <input type="text" name="name" class="form-control" id="Street Address" placeholder="Enter State" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-4">Pincode*
+                                        <input type="text" name="name" class="form-control" id="Street Address" placeholder="Enter Pincode" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-4">Upload Invoice Copy*<br>
+                                
+                                        <input type="file" name="file1" id="file1" class="form-control"></div>
+                                    <div class="form-group col-md-6 mb-4">Upload Video*<br>
+                                        
+                                        <input type="file" name="file2" id="file2" class="form-control"></div>
                                     <div class="col-md-12">
                                         <button type="submit" class="btn-default">submit</button>
                                         <div id="msgSubmit" class="h3 hidden"></div>
@@ -274,11 +312,179 @@
                     </div>
                     <!-- Contact Us Form End -->
                 </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="page-contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Our Faq Content Start -->
+                    <div class="our-faqs-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">FAQs</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">Your Guide to Bathware <span>and Kitchen
+                                    FAQs</span></h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Our FAQ section is here to answer all your
+                                questions about bathware and kitchen solutions.</p>
+                        </div>
+                        <!-- Section Title End -->
+    
+                        <!-- FAQ Accordion Start -->
+                        <div class="faq-accordion" id="accordion">
+                            <!-- FAQ Item Start -->
+                            <div class="accordion-item wow fadeInUp">
+                                <h2 class="accordion-header" id="heading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        <span>1.</span> What types of products does Dallos offer?
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+                                    data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <p>We specialize in premium bathware and kitchen solutions, including faucets,
+                                            sinks, bathtubs, shower systems, and accessories that blend style and
+                                            functionality.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FAQ Item End -->
+    
+                            <!-- FAQ Item Start -->
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                                <h2 class="accordion-header" id="heading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        <span>2.</span> Are your products eco-friendly?
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                                    data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <p>Yes, we prioritize sustainability by offering water-saving designs and using
+                                            eco-friendly manufacturing processes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FAQ Item End -->
+    
+                            <!-- FAQ Item Start -->
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                                <h2 class="accordion-header" id="heading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        <span>3.</span> Do you provide installation services?
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                                    data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <p>Yes, we offer professional installation services to ensure our products are set
+                                            up perfectly and function seamlessly in your space.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FAQ Item End -->
+    
+                            <!-- FAQ Item Start -->
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+                                <h2 class="accordion-header" id="heading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        <span>4.</span> Can I customize my order?
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                                    data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <p>We provide customization options for select products to meet your unique design
+                                            preferences. Contact us for more details.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FAQ Item End -->
+                        </div>
+                        <!-- FAQ Accordion End -->
+                    </div>
+                    <!-- Our Faq Content End -->
+                </div>
             </div>
         </div>
     </div>
     <!-- Page Contact Us End -->
-
+    <!-- <div class="col-12 col-sm-12 col-md-6 padl0" style="border-right:1px solid #dedede;">
+                    <h4 style="font-weight:700;">RAISE ONLINE SERVICE REQUEST</h4>
+                    <form method="post" action="https://www.aquantindia.com/process.php" name="service_form" id="service_form" enctype="multipart/form-data" novalidate="novalidate">
+                        <input type="hidden" name="action" id="action" value="service">          
+                        <input type="hidden" id="g-recaptcha-response4" name="g-recaptcha-response4">          
+                        <div class="row margin0">
+                            <div class="col-12 col-sm-12 col-md-12 padb20 padl0 font-14">Service Request Type*
+                                <select type="text" name="request_type" id="request_type" class="contact-select">
+                                    <option value="Product Complaint">Product Complaint</option>
+                                    <option value="Installation Guidelines">installation Guidelines</option>
+                                </select></div>
+                            <div class="col-12 col-sm-12 col-md-12 padb20 padl0 font-14">Service Description*
+                                <textarea name="description" id="description" class="contact-select" style="height:100px;"></textarea>
+                                <div class="error_holder"> </div></div>
+                            <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">Customer Name *<br>
+                                
+                                <input type="text" name="name" id="name" class="contact-input">
+                                <div class="error_holder"> </div></div>
+                            <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">Supplying Dealer Name *<br>
+                                
+                                <input type="text" name="dealer" id="dealer" class="contact-input">
+                                <div class="error_holder"> </div></div>
+                            <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">Email *<br>
+                                
+                                <input type="text" name="email" id="email" class="contact-input">
+                                <div class="error_holder"> </div></div>              
+                          
+                            <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">Contact Number *<br>
+                                
+                                <input type="text" name="telephone" id="telephone" class="contact-input">
+                                <div class="error_holder"> </div></div>
+                            <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">Alternate Contact Number<br>
+                                
+                                <input type="text" name="telephone2" id="telephone2" class="contact-input">
+                                <div class="error_holder"> </div></div>              
+                            <div class="col-12 col-sm-12 col-md-12 padb20 padl0 font-14"><span style="font-weight: bold;">Address</span></div>
+                            <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">Street *<br>
+                                
+                                <input type="text" name="street" id="street" class="contact-input">
+                                <div class="error_holder"> </div></div>
+                            <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">Area/Locality *<br>
+                                
+                                <input type="text" name="locality" id="locality" class="contact-input">
+                                <div class="error_holder"> </div></div>
+                            <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">Landmark *<br>
+                                
+                                <input type="text" name="landmark" id="landmark" class="contact-input">
+                                <div class="error_holder"> </div></div>
+                            <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">City *<br>
+                                
+                                <input type="text" name="city" id="city" class="contact-input">
+                                <div class="error_holder"> </div></div>
+                            <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">State *<br>
+                                
+                                <input type="text" name="state" id="state" class="contact-input">
+                                <div class="error_holder"> </div></div>              
+                            <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">Pincode *<br>
+                                
+                                <input type="text" name="pincode" id="pincode" class="contact-input">
+                                <div class="error_holder"> </div></div>              
+                            <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">Upload Invoice Copy<br>
+                                
+                                <input type="file" name="file1" id="file1" class="contact-input"></div>
+                            <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">Upload Video<br>
+                                
+                                <input type="file" name="file2" id="file2" class="contact-input"></div>
+                            <div class="col-12 col-sm-12 col-md-12 padb20 padl0 font-14">
+                                <input type="submit" value="SEND" class="cyan_button w100"></div></div>
+                    </form></div>
+            </div> -->
     
 
     <!-- Footer Start -->
