@@ -1950,6 +1950,7 @@ header.main-header .header-sticky.active .navbar{
 .footer-social-links ul li{
 	display: inline-flex;
 	margin-right: 10px;
+	padding: 2px;
 }
 
 .footer-social-links ul li:last-child{
@@ -4884,11 +4885,21 @@ header.main-header .header-sticky.active .navbar{
 }
 .table-wrapper{
 	overflow-x: auto;
-  }
+}
   
-  .table-wrapper::-webkit-scrollbar{
+.table-wrapper::-webkit-scrollbar{
 	width: 0px;
-  }
+}
+
+.footer-social-media-icon{
+	size: 110px;
+}
+
+
+
+
+
+
 
 .one-product{
 	background-color: #000;
