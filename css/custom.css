@@ -4739,7 +4739,7 @@ header.main-header .header-sticky.active .navbar{
 	width: 100%;
 	cursor: pointer;
 	height: 500px;
-	object-fit: fill;
+	/* object-fit: fill; */
 }
 .side-scroll{
 	height: 500px;
@@ -4748,7 +4748,7 @@ header.main-header .header-sticky.active .navbar{
 .side-scroll img{
 	height: 175px;
 	width: 175px;
-	object-fit: fill;
+	/* object-fit: fill; */
 	float: right;
 }
 ::-webkit-scrollbar {
@@ -4761,7 +4761,7 @@ header.main-header .header-sticky.active .navbar{
 		width: 100%;
 		cursor: pointer;
 		height: 200px;
-		object-fit: fill;
+		/* object-fit: fill; */
 	}
 
 	.side-scroll{
@@ -4772,7 +4772,7 @@ header.main-header .header-sticky.active .navbar{
 	.side-scroll img{
 		height: 100px;
 		width: 100px;
-		object-fit: fill;
+		/* object-fit: fill; */
 	}
   }
 
@@ -4781,13 +4781,13 @@ header.main-header .header-sticky.active .navbar{
 		width: 100% !important;
 		cursor: pointer;
 		height: 200px;
-		object-fit: fill;
+		/* object-fit: fill; */
 	}
 
 	.side-scroll img{
 		height: 79px;
 		/* width: 82px; */
-		object-fit: fill;
+		/* object-fit: fill; */
 		float: right;
 	}
   }
@@ -4882,7 +4882,13 @@ header.main-header .header-sticky.active .navbar{
 .Product-Discription{
 	font-weight: 700;
 }
-
+.table-wrapper{
+	overflow-x: auto;
+  }
+  
+  .table-wrapper::-webkit-scrollbar{
+	width: 0px;
+  }
 
 .one-product{
 	background-color: #000;
