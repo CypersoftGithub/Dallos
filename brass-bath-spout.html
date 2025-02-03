@@ -277,7 +277,7 @@
 
             <div class="col-md-6">
                 <h1 class="Product-heading">BRASS BATH SPOUT</h1>
-                <p class="Product-details mt-2">Item Code: <span> </span></p>
+                <p class="Product-details mt-2">Item Code: <span id="itemCode">A123</span></p>
 
                 <div class="mb-3">
                     <label class="form-label">Collection</label>
@@ -509,6 +509,44 @@
                 document.getElementById('mainImage').src = this.getAttribute('data-main');
             });
         });
+
+        // Select all the thumbnail images
+    const colorImages = document.querySelectorAll('.color-image');
+
+// Add event listener to each image
+colorImages.forEach(image => {
+    image.addEventListener('click', function () {
+        // Change the main image
+        const mainImage = document.getElementById('mainImage');
+        const newImage = this.getAttribute('data-main');
+        mainImage.src = newImage;
+
+        // Update the item code
+        const itemCode = this.getAttribute('data-item-code');
+        document.getElementById('itemCode').textContent = itemCode;
+    });
+});
+
+
+const colorButtons = document.querySelectorAll('.header-btn');
+
+// Add event listener to each button
+colorButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        // Change the main image
+        const mainImage = document.getElementById('mainImage');
+        const newImage = this.getAttribute('data-main');
+        mainImage.src = newImage;
+
+        // Update the item code
+        const itemCode = this.getAttribute('data-item-code');
+        document.getElementById('itemCode').textContent = itemCode;
+
+        // Optional: Set the active class on the selected button
+        colorButtons.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
     </script>
 </body>
 

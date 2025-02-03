@@ -4891,61 +4891,6 @@ header.main-header .header-sticky.active .navbar{
   width: 0px;
 }
 
-.one-product{
-	background-color: #000;
-}
-.two-product{
-	background-color: red;
-}
-.three-product{	
-	background-color: blue;
-}
-.four-product{
-	background-color: purple;
-}
-.five-product{
- 	background-color: gold;
-}
-.six-product{
-	background-color: #000;
-}
-.seven-product{
-	background-color: red;
-}
-.eight-product{	
-	background-color: blue;
-}
-.nine-product{
-	background-color: purple;
-}
-.ten-product{
- 	background-color: rgb(32, 65, 113);
-}
-.eleven-product{
-	background-color: rgb(50, 176, 162);
-}
-.twelve-product{
-	background-color: rgb(33, 120, 126);
-}
-.thirteen-product{
-	background-color: rgb(109, 58, 199);
-}
-.fourteen-product{
-	border-color: aquamarine;
-}
-
-.shower-one{
-	background-color: red;
-}
-.shower-two{
-	background-color: rgb(51, 0, 255);
-}
-.shower-three{
-	background-color: rgb(47, 255, 0);
-}
-.shower-four{
-	background-color: rgb(72, 117, 108);
-}
-.shower-five{
-	background-color: rgb(74, 113, 121);
+.side-scroll-img{
+	object-fit: cover !important;
 }

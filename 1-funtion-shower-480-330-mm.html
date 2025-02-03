@@ -242,27 +242,32 @@
                     <div class="me-2">
                         <img src="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/main.jpeg" alt="one"
                             class="img-thumbnail color-image" data-color="one"
-                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/main.jpeg">
+                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/main.jpeg"
+                             data-item-code="CS-01-1-BG">
                     </div>
                     <div class="me-2">
                         <img src="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/1.jpeg" alt="two"
                             class="img-thumbnail color-image" data-color="two"
-                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/1.jpeg">
+                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/1.jpeg"
+                             data-item-code="CS-01-1-RG">
                     </div>
                     <div class="me-2">
                         <img src="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/2.jpeg" alt="three"
                             class="img-thumbnail color-image" data-color="three"
-                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/2.jpeg">
+                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/2.jpeg"
+                             data-item-code="CS-01-1-GG">
                     </div>
                     <div class="me-2">
                         <img src="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/3.jpeg" alt="four"
                             class="img-thumbnail color-image" data-color="four"
-                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/3.jpeg">
+                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/3.jpeg"
+                             data-item-code="CS-01-1-MB">
                     </div>
                     <div class="me-2">
                         <img src="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/4.jpeg" alt="five"
                             class="img-thumbnail color-image" data-color="five"
-                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/4.jpeg">
+                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/4.jpeg"
+                             data-item-code="CS-01-1-CP">
                     </div>
                 </div>
             </div>
@@ -276,36 +281,41 @@
 
             <div class="col-md-6">
                 <h1 class="Product-heading">1 FUNTION SHOWER</h1>
-                <p class="Product-details mt-2">Item Code: <span> </span></p>
+                <p class="Product-details mt-2">Item Code: <span id="itemCode">CS-01-1-BG</span></p>
                 <div class="mb-3">
                     <label class="form-label">Collection</label>
                     <div>
                         <span class="header-btn active" data-color="one"
-                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/main.jpeg">
+                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/main.jpeg"
+                             data-item-code="CS-01-1-BG">
                             <div class="header-btn d-inline-flex">
                                 <a class="product-color">Brushed Gold</a>
                             </div>
                         </span>
                         <span class="header-btn" data-color="three"
-                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/1.jpeg">
+                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/1.jpeg"
+                             data-item-code="CS-01-1-RG">
                             <div class="header-btn d-inline-flex">
                                 <a class="product-color">Rose Gold</a>
                             </div>
                         </span>
                         <span class="header-btn" data-color="three"
-                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/2.jpeg">
+                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/2.jpeg"
+                             data-item-code="CS-01-1-GG">
                             <div class="header-btn d-inline-flex">
                                 <a class="product-color">Gunmetal Grey</a>
                             </div>
                         </span>
                         <span class="header-btn" data-color="four"
-                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/3.jpeg">
+                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/3.jpeg"
+                             data-item-code="CS-01-1-MB">
                             <div class="header-btn d-inline-flex">
                                 <a class="product-color">Matt Black</a>
                             </div>
                         </span>
                         <span class="header-btn" data-color="five"
-                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/4.jpeg">
+                            data-main="https://dallos.in/./images/home/Bathroom/shower/1-funtion-shower-480-330-mm/4.jpeg"
+                             data-item-code="CS-01-1-CP">
                             <div class="header-btn d-inline-flex">
                                 <a class="product-color">Chrome</a>
                             </div>
@@ -519,6 +529,44 @@
                 document.getElementById('mainImage').src = this.getAttribute('data-main');
             });
         });
+
+        // Select all the thumbnail images
+    const colorImages = document.querySelectorAll('.color-image');
+
+// Add event listener to each image
+colorImages.forEach(image => {
+    image.addEventListener('click', function () {
+        // Change the main image
+        const mainImage = document.getElementById('mainImage');
+        const newImage = this.getAttribute('data-main');
+        mainImage.src = newImage;
+
+        // Update the item code
+        const itemCode = this.getAttribute('data-item-code');
+        document.getElementById('itemCode').textContent = itemCode;
+    });
+});
+
+
+const colorButtons = document.querySelectorAll('.header-btn');
+
+// Add event listener to each button
+colorButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        // Change the main image
+        const mainImage = document.getElementById('mainImage');
+        const newImage = this.getAttribute('data-main');
+        mainImage.src = newImage;
+
+        // Update the item code
+        const itemCode = this.getAttribute('data-item-code');
+        document.getElementById('itemCode').textContent = itemCode;
+
+        // Optional: Set the active class on the selected button
+        colorButtons.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
     </script>
 </body>
 

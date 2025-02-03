@@ -242,7 +242,8 @@
                     <div class="me-2">
                         <img src="https://dallos.in/./images/home/Bathroom/shower/4-funtion-shower-900X350-MM/main.JPG" alt="one"
                             class="img-thumbnail color-image" data-color="one"
-                            data-main="https://dallos.in/./images/home/Bathroom/shower/4-funtion-shower-900X350-MM/main.JPG">
+                            data-main="https://dallos.in/./images/home/Bathroom/shower/4-funtion-shower-900X350-MM/main.JPG"
+                            >
                     </div>
                     <div class="me-2">
                         <img src="https://dallos.in/./images/home/Bathroom/shower/4-funtion-shower-900X350-MM/1.JPG" alt="two"
@@ -296,7 +297,7 @@
 
             <div class="col-md-6">
                 <h1 class="Product-heading">4 FUNTION SHOWER</h1>
-                <p class="Product-details mt-2">Item Code: <span> </span></p>
+                <p class="Product-details mt-2">Item Code: <span>CS-02-4-CP</span></p>
                 <div class="mb-3">
                     <label class="form-label">Collection</label>
                     <div>
@@ -508,6 +509,28 @@
                 document.getElementById('mainImage').src = this.getAttribute('data-main');
             });
         });
+
+        // Select all the thumbnail images
+    const colorImages = document.querySelectorAll('.color-image');
+
+// Add event listener to each image
+colorImages.forEach(image => {
+    image.addEventListener('click', function () {
+        // Change the main image
+        const mainImage = document.getElementById('mainImage');
+        const newImage = this.getAttribute('data-main');
+        mainImage.src = newImage;
+
+        // Update the item code
+        const itemCode = this.getAttribute('data-item-code');
+        document.getElementById('itemCode').textContent = itemCode;
+    });
+});
+
+
+const colorButtons = document.querySelectorAll('.header-btn');
+
+
     </script>
 </body>
 

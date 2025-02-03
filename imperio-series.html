@@ -243,7 +243,7 @@
                 <div class="side-scroll">
                     <div class="me-2">
                         <img src="https://dallos.in/./images/home/Bathroom/facutes/imperio-series/main.jpg" alt="one"
-                            class="img-thumbnail color-image" data-color="one"
+                            class="img-thumbnail color-image side-scroll-img" data-color="one"
                             data-main="https://dallos.in/./images/home/Bathroom/facutes/imperio-series/main.jpg">
                     </div>
                     <div class="me-2">
@@ -253,7 +253,7 @@
                     </div>
                     <div class="me-2">
                         <img src="https://dallos.in/./images/home/Bathroom/facutes/imperio-series/2.jpg" alt="three"
-                            class="img-thumbnail color-image" data-color="three"
+                            class="img-thumbnail color-image side-scroll-img" data-color="three"
                             data-main="https://dallos.in/./images/home/Bathroom/facutes/imperio-series/2.jpg">
                     </div>
                 </div>
@@ -450,10 +450,10 @@
     <script src="https://dallos.in/https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Color tab functionality
-        document.querySelectorAll('.color-tab').forEach(tab => {
+        document.querySelectorAll('.header-btn').forEach(tab => {
             tab.addEventListener('click', function () {
                 document.getElementById('mainImage').src = this.getAttribute('data-main');
-                document.querySelectorAll('.color-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.header-btn').forEach(t => t.classList.remove('active'));
                 this.classList.add('active');
             });
         });
@@ -464,6 +464,44 @@
                 document.getElementById('mainImage').src = this.getAttribute('data-main');
             });
         });
+
+        // Select all the thumbnail images
+    const colorImages = document.querySelectorAll('.color-image');
+
+// Add event listener to each image
+colorImages.forEach(image => {
+    image.addEventListener('click', function () {
+        // Change the main image
+        const mainImage = document.getElementById('mainImage');
+        const newImage = this.getAttribute('data-main');
+        mainImage.src = newImage;
+
+        // Update the item code
+        const itemCode = this.getAttribute('data-item-code');
+        document.getElementById('itemCode').textContent = itemCode;
+    });
+});
+
+
+const colorButtons = document.querySelectorAll('.header-btn');
+
+// Add event listener to each button
+colorButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        // Change the main image
+        const mainImage = document.getElementById('mainImage');
+        const newImage = this.getAttribute('data-main');
+        mainImage.src = newImage;
+
+        // Update the item code
+        const itemCode = this.getAttribute('data-item-code');
+        document.getElementById('itemCode').textContent = itemCode;
+
+        // Optional: Set the active class on the selected button
+        colorButtons.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
     </script>
 </body>
 
