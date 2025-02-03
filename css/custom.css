@@ -4894,3 +4894,15 @@ header.main-header .header-sticky.active .navbar{
 .side-scroll-img{
 	object-fit: cover !important;
 }
+
+@media only screen and (max-width: 1000px) {
+	.side-scroll-img{
+		object-fit: cover !important;
+	}
+  }
+
+  @media only screen and (max-width: 768px) {
+	.side-scroll-img{
+		object-fit: cover !important;
+	}
+  }
