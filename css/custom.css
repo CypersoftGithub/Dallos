@@ -4908,8 +4908,8 @@ header.main-header .header-sticky.active .navbar{
 		object-fit: cover !important;
 	}
   }
-<<<<<<< Updated upstream
-=======
+/* <<<<<<< Updated upstream
+======= */
 .whatsapp-popup {
   position: fixed;
   bottom: 90px; /* Keeps it above the WhatsApp icon */
@@ -4968,8 +4968,8 @@ header.main-header .header-sticky.active .navbar{
 	  right: 10px;
 	}
   }
->>>>>>> Stashed changes
-=======
+/* >>>>>>> Stashed changes
+======= */
 
   
 
@@ -5035,4 +5035,4 @@ header.main-header .header-sticky.active .navbar{
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 }
->>>>>>> Stashed changes
+/* >>>>>>> Stashed changes */

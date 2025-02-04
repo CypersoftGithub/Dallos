@@ -277,7 +277,7 @@
                             <span class="close" onclick="closeModal()">&times;</span>
                             <div class="contact-form">
                                 <!-- Contact Form Start -->
-                                <form id="contactForm" method="POST"  name="contact_form" novalidate="novalidate" onsubmit="return handleFormSubmit(event)">
+                                <form id="contactForm" method="POST"  name="catalog-form" novalidate="novalidate" onsubmit="return handleFormSubmit(event)">
                                     <input type="hidden" name="action" id="action" value="brochures">
                                     <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
                     
@@ -656,7 +656,19 @@
     }
 
 
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwMI5RPr4sZl1bBB8Std9e0_FSxfOPWvZsn45qbSg3V6_L922gkt631goGaTdyOVJHqMA/exec'
+    const form = document.forms['catalog-form']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
     </script>
+
+
 </body>
 
 </html>
