@@ -263,7 +263,7 @@
                         <!-- Contact Form Start -->
                         <div class="contact-form">
                             <!-- Contact Form Start -->
-                            <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp"
+                            <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" name="contact-form"
                                 data-wow-delay="0.4s">
                                 <div class="row">
                                     <div class="form-group col-md-6 mb-4">
@@ -566,6 +566,18 @@
     <script src="https://dallos.in/js/wow.min.js"></script>
     <!-- Main Custom js file -->
     <script src="https://dallos.in/js/function.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz0xxJ8k2KTwXNUex4V-Fzkpkfz5--TFozCZLXNaxtl2jnya-sY7p2NHLi5EPIxkV3tJg/exec'
+        const form = document.forms['contact-form']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 
 </html>

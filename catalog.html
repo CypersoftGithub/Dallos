@@ -255,22 +255,139 @@
                                             <img src="https://dallos.in/images/DALLOS_CATALOG.png" height="500px" alt="">
                                         </figure>
                                     </div>
-
+                    
                                     <div class="project-btn">
-                                        <a href="images/home/Dallos_catalogue.pdf" target="_blank"><img
-                                                src="https://dallos.in/images/arrow-white.svg" alt=""></a>
+                                        <a href="javascript:void(0);" onclick="openModal()">
+                                            <img src="https://dallos.in/images/arrow-white.svg" alt="">
+                                        </a>
                                     </div>
                                 </div>
-
+                    
                                 <div class="project-content">
-                                    <!-- <h3>Stylish Accessories</h3> -->
                                     <h2>Download</h2>
                                 </div>
                             </div>
                             <!-- Project Item End -->
                         </div>
-
-
+                    </div>
+                    
+                    <!-- Popup Modal with Form -->
+                    <div id="downloadModal" class="modal" style="justify-content: center; align-items: center;">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <div class="contact-form">
+                                <!-- Contact Form Start -->
+                                <form id="contactForm" method="POST"  name="contact_form" novalidate="novalidate" onsubmit="return handleFormSubmit(event)">
+                                    <input type="hidden" name="action" id="action" value="brochures">
+                                    <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                    
+                                    <div class="row margin0">
+                                        <div class="col-12 col-sm-12 col-md-12 padb20 padl0">
+                                            <div id="form_header">
+                                                Leave us your details. We will get in touch as soon as possible!
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-12 col-sm-12 col-md-12 padb20 padl0 font-14">
+                                            Profession *<br>
+                                            <select type="text" name="profession" id="profession" class="contact-select" aria-invalid="false" required>
+                                                <option value="Architect">Architect</option>
+                                                <option value="Interior Designer">Interior Designer</option>
+                                                <option value="Builder">Builder</option>
+                                                <option value="Private Client">Private Client</option>
+                                                <option value="Journalist">Journalist</option>
+                                                <option value="Showroom Personnel">Showroom Personnel</option>
+                                            </select>
+                                        </div>
+                    
+                                        <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">
+                                            Name *<br>
+                                            <input type="text" name="name" id="name" class="contact-input" required>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">
+                                            Company<br>
+                                            <input type="text" name="company" id="company" class="contact-input">
+                                        </div>
+                    
+                                        <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">
+                                            State *<br>
+                                            <select name="state" id="state" class="contact-select" aria-invalid="false">
+                                                <option value="">Select State</option>
+                                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                                <option value="Assam">Assam</option>
+                                                <option value="Bihar">Bihar</option>
+                                                <option value="Chandigarh">Chandigarh</option>
+                                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                                <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                                                <option value="Daman and Diu">Daman and Diu</option>
+                                                <option value="Delhi">Delhi</option>
+                                                <option value="Goa">Goa</option>
+                                                <option value="Gujarat">Gujarat</option>
+                                                <option value="Haryana">Haryana</option>
+                                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                                <option value="Jharkhand">Jharkhand</option>
+                                                <option value="Karnataka">Karnataka</option>
+                                                <option value="Kerala">Kerala</option>
+                                                <option value="Ladakh">Ladakh</option>
+                                                <option value="Lakshadweep">Lakshadweep</option>
+                                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                <option value="Maharashtra">Maharashtra</option>
+                                                <option value="Manipur">Manipur</option>
+                                                <option value="Meghalaya">Meghalaya</option>
+                                                <option value="Mizoram">Mizoram</option>
+                                                <option value="Nagaland">Nagaland</option>
+                                                <option value="Odisha">Odisha</option>
+                                                <option value="Puducherry">Puducherry</option>
+                                                <option value="Punjab">Punjab</option>
+                                                <option value="Rajasthan">Rajasthan</option>
+                                                <option value="Sikkim">Sikkim</option>
+                                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                                <option value="Telangana">Telangana</option>
+                                                <option value="Tripura">Tripura</option>
+                                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                <option value="Uttarakhand">Uttarakhand</option>
+                                                <option value="West Bengal">West Bengal</option>
+                                            </select>
+                                        </div>
+                    
+                                        <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">
+                                            City *<br>
+                                            <input type="text" name="city" id="city" class="contact-input" required>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">
+                                            Area/Locality *<br>
+                                            <input type="text" name="locality" id="locality" class="contact-input" required>
+                                        </div>
+                    
+                                        <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">
+                                            Phone *<br>
+                                            <input type="text" name="telephone" id="telephone" value="+91-" class="contact-input" required>
+                                            <small>(Kindly enter whatsapp phone no for us to share details over whatsapp)</small>
+                                        </div>
+                    
+                                        <div class="col-12 col-sm-12 col-md-6 padb20 padl0 font-14">
+                                            Email *<br>
+                                            <input type="email" name="email" id="email" class="contact-input" required>
+                                        </div>
+                    
+                                        <div class="col-12 col-sm-12 col-md-12 padb20 padl0 font-14 mt-3">
+                                            <input type="submit" value="SEND" class="btn-submit w-100">
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- Contact Form End -->
+                    
+                                <!-- PDF Download Button (Initially Hidden) -->
+                                <div id="pdfDownloadButton" style="display:none; text-align: center; margin-top: 20px;">
+                                    <a href="./images/home/Dallos_catalogue.pdf" class="btn-download w-100" download>
+                                        <button class="btn-submit w-100">Download PDF</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- Project Item Boxes End -->
                 </div>
@@ -450,6 +567,96 @@
     <script src="https://dallos.in/js/wow.min.js"></script>
     <!-- Main Custom js file -->
     <script src="https://dallos.in/js/function.js"></script>
+    <script>
+        // Open Modal Function
+// function openModal() {
+//     document.getElementById('downloadModal').style.display = 'block';
+// }
+
+// // Close Modal Function
+// function closeModal() {
+//     document.getElementById('downloadModal').style.display = 'none';
+// }
+
+// // Handle Form Submission
+// function handleSubmit(event) {
+//     event.preventDefault(); // Prevent default form submission
+
+//     // Simple Form Validation: Check if all fields are filled
+//     const name = document.getElementById('name').value.trim();
+//     const email = document.getElementById('email').value.trim();
+//     const phone = document.getElementById('phone').value.trim();
+//     const message = document.getElementById('message').value.trim();
+
+//     // Check if any required fields are empty
+//     if (!name || !email || !phone || !message) {
+//         alert("Please fill in all fields.");
+//         return false; // Prevent form submission if any field is empty
+//     }
+
+//     // If all fields are valid, proceed with form submission and PDF download
+//     // Optionally, you can send form data to a server here
+
+//     // Simulate PDF Download
+//     downloadPDF();
+
+//     // Show Success Message
+//     document.getElementById('msgSubmit').innerHTML = "Your form has been submitted successfully!";
+//     document.getElementById('msgSubmit').style.display = "block";
+
+//     // Close Modal after submission
+//     setTimeout(() => {
+//         closeModal();
+//     }, 2000); // Close after 2 seconds
+
+//     return false; // Prevent form from reloading the page
+// }
+
+// // Simulate PDF Download
+// function downloadPDF() {
+//     // PDF URL
+//     const pdfLink = "images/home/Dallos_catalogue.pdf";
+    
+//     // Create an anchor tag for downloading the PDF
+//     const link = document.createElement('a');
+//     link.href = pdfLink;
+//     link.download = pdfLink.split('/').pop(); // Use the file name from the URL
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+// }
+
+
+
+
+ // Handle form submission and show download button
+ function handleFormSubmit(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Check if form fields are valid
+        if (document.getElementById('contactForm').checkValidity()) {
+            // After the form is valid, display the download button
+            document.getElementById('pdfDownloadButton').style.display = 'flex';
+            // Optionally, you can hide the form after submission or show a success message.
+            alert("Form submitted successfully. You can now download the PDF.");
+            return false; // To prevent the form from actually submitting (if you want to use AJAX)
+        } else {
+            alert("Please fill in all required fields.");
+            return false;
+        }
+    }
+
+    // Modal control functions
+    function openModal() {
+        document.getElementById('downloadModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+        document.getElementById('downloadModal').style.display = 'none';
+    }
+
+
+    </script>
 </body>
 
 </html>
