@@ -4762,12 +4762,12 @@ header.main-header .header-sticky.active .navbar{
 	.product-images img {
 		width: 100%;
 		cursor: pointer;
-		height: 200px;
+		height: 350px;
 		/* object-fit: fill; */
 	}
 
 	.side-scroll{
-		height: 200px;
+		height: 350px;
 		overflow: scroll;
 	}
 
@@ -4780,10 +4780,35 @@ header.main-header .header-sticky.active .navbar{
 
   @media only screen and (max-width: 768px) {
 	.product-images img {
+		width: 100%;
+		cursor: pointer;
+		height: 400px;
+		/* object-fit: cover; */
+	}
+
+	.side-scroll{
+		height: 400px;
+		overflow: scroll;
+	}
+
+	.side-scroll img{
+		height: 130px;
+		width: 130px;
+		/* object-fit: fill; */
+	}
+  }
+
+
+  @media only screen and (max-width: 450px) {
+	.product-images img {
 		width: 100% !important;
 		cursor: pointer;
-		height: 200px;
+		height: 250px;
 		/* object-fit: fill; */
+	}
+	.side-scroll{
+		height: 250px;
+		overflow: scroll;
 	}
 
 	.side-scroll img{
@@ -4896,7 +4921,7 @@ header.main-header .header-sticky.active .navbar{
 	object-fit: cover !important;
 }
 
-<<<<<<< Updated upstream
+
 @media only screen and (max-width: 1000px) {
 	.side-scroll-img{
 		object-fit: cover !important;
@@ -4908,8 +4933,11 @@ header.main-header .header-sticky.active .navbar{
 		object-fit: cover !important;
 	}
   }
-/* <<<<<<< Updated upstream
-======= */
+
+  .side-bar-img{
+	object-fit: fill !important;
+  }
+
 .whatsapp-popup {
   position: fixed;
   bottom: 90px; /* Keeps it above the WhatsApp icon */
@@ -4968,8 +4996,7 @@ header.main-header .header-sticky.active .navbar{
 	  right: 10px;
 	}
   }
-/* >>>>>>> Stashed changes
-======= */
+
 
   
 
@@ -5035,4 +5062,4 @@ header.main-header .header-sticky.active .navbar{
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 }
-/* >>>>>>> Stashed changes */
+
