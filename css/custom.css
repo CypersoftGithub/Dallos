@@ -4921,7 +4921,6 @@ header.main-header .header-sticky.active .navbar{
 	object-fit: cover !important;
 }
 
-
 @media only screen and (max-width: 1000px) {
 	.side-scroll-img{
 		object-fit: cover !important;
@@ -4933,12 +4932,7 @@ header.main-header .header-sticky.active .navbar{
 		object-fit: cover !important;
 	}
   }
-
-  .side-bar-img{
-	object-fit: fill !important;
-  }
-
-.whatsapp-popup {
+  .whatsapp-popup {
   position: fixed;
   bottom: 90px; /* Keeps it above the WhatsApp icon */
   right: 20px;
@@ -5062,4 +5056,9 @@ header.main-header .header-sticky.active .navbar{
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 }
-
+/* >>>>>>> Stashed changes */
+@media (max-width: 768px) {
+	.main-slider-btn{
+		display: inline-grid;
+	}
+  }
