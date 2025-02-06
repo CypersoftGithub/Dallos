@@ -5059,6 +5059,7 @@ header.main-header .header-sticky.active .navbar{
 /* >>>>>>> Stashed changes */
 @media (max-width: 768px) {
 	.main-slider-btn{
-		display: inline-grid;
+    display: inline-grid !important;
+    justify-items: start !important;
 	}
   }
